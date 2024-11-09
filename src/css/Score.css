@@ -1,0 +1,176 @@
+.score {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+.score{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Gill Sans","Gill Sans MT", Calibri, sans-serif;
+}
+
+
+.derivat {
+    width: auto;
+    display: flex;
+    flex-direction: column; /* pt a pune al doilea buton sub */
+    align-items: center;
+}
+
+.derivat h1{
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    height: auto;
+    font-weight: bold;
+    color:black;
+}
+
+.derivat h2{
+    padding:0;
+    font-size: 40px;
+    font-weight: lighter;
+    color:black;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+
+.button_1{
+    align-items: center;
+    background-color: #295f98;
+    border: 0;
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "Sans-serif", monospace;
+    /*marimea scrisului din buton*/
+    font-size:45px;
+    font-weight: 20;
+    font-style:normal;
+    font-variation-settings: "wdth" 93.5;
+    justify-content: center;
+    line-height: 20px;
+    max-width: 480px;
+    /*dimensiunea butonului*/
+    min-height: 65px;
+    min-width: 0px;
+    overflow: hidden;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    touch-action: manipulation;
+    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    margin-bottom: 20px; /* adauga spatiu intre .button_1 and .button_2 */
+}
+.button_1:hover,
+.button_1:focus {
+    background-color: #16437E;
+    color: #ffffff;
+}
+
+.button_1:active {
+    background: #09223b;
+    color: rgb(255, 255, 255, .7);
+}
+
+.button_1:disabled {
+    cursor: not-allowed;
+    background: rgba(0, 0, 0, .08);
+    color: rgba(0, 0, 0, .3);
+}
+
+
+.button_2 {
+    align-items: center;
+    background-color: #FFA500;
+    border: 0;
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "Sans-serif", monospace;
+    font-size: 30px;
+    font-weight: bold;
+    justify-content: center;
+    line-height: 20px;
+    max-width: 480px;
+    min-height: 65px;
+    padding: 10px 20px;
+    text-align: center;
+    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1), color 0.167s;
+    user-select: none;
+    vertical-align: middle;
+    margin-top: 20px; /* Adds spacing between the two buttons */
+}
+
+.button_2:hover,
+.button_2:focus {
+    background-color: #FF8C00;
+    color: #ffffff;
+}
+
+.button_2:active {
+    background: #CC7000;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.button_2:disabled {
+    cursor: not-allowed;
+    background: rgba(0, 0, 0, 0.08);
+    color: rgba(0, 0, 0, 0.3);
+}
+
+
+.fun-facts-list {
+    margin-top: 20px;
+    padding: 0;
+    list-style-type: none;
+    color: #333333;
+    font-size: 18px;
+    text-align: left;
+    width: 100%;
+    max-width: 900px;
+    max-height: 180px;
+    overflow-y: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    padding: 15px;
+}
+
+/* Fun Fact Item Styling */
+.fun-facts-list li {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-bottom: 5px;
+    line-height: 1.6;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.fun-facts-list li::before {
+    content: "⭐ ";
+    font-size: 1.2rem;
+    margin-right: 8px;
+    color: #ffcc00;
+}
