@@ -10,6 +10,25 @@ function ChatBox() {
     const chatboxRef = useRef(null);
     const chatInputRef = useRef(null);
 
+    const runModel = async (prompt) => {
+        const model = genAI.getGenerativeModel({model: "gemini-pro"});
+
+        const result = await model.generateContent(prompt);
+        const response = await result.response;
+        const text = await response.text();
+
+        return text;
+    }
+
+    const generateResponse = async (userMessage) => {
+        try {
+            const answer = await runModel(userMessage);
+            return answer;
+        } catch (error) {
+            console.error("Failed to generate response:", error);
+            return "Sorry, I couldn't get an answer.";
+        }
+    };
     // Function to add a new message to the chat
     const addMessage = (message, type) => {
         setMessages((prevMessages) => [
@@ -24,7 +43,7 @@ function ChatBox() {
     };
 
     // Function to handle sending a message
-    const handleSendMessage = () => {
+    const handleSendMessage = async () => {
         if (!inputValue.trim()) return;
 
         // Add the user's message
@@ -36,10 +55,9 @@ function ChatBox() {
         // Add the "Thinking..." message
         addMessage('Thinking...', 'incoming');
 
-        // Simulate a response after 600ms
-        setTimeout(() => {
-            addMessage('The answer is yes', 'incoming');
-        }, 600);
+        const response = await generateResponse(inputValue);
+
+        addMessage(response, 'incoming');
     };
 
     // Handle input height adjustment
