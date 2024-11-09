@@ -1,0 +1,181 @@
+
+*{
+    font-family: 'Arial',sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url('../images/imagine_timisoara_welcome.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.app {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; /* verticala */
+    flex-wrap:wrap;
+    min-height: 100vh; /* asigura ca ocupa toată inaltimea */
+    text-align: center;
+    position: relative;
+}
+
+.title {
+
+    position: absolute;
+    top: -10px; /* verticala */
+    left: 20px; /* orizontala */
+    font-size: 21px;
+    color: black;
+    margin: 10px 0; /* margini pentru spatiere */
+}
+
+.question-with-image {
+    margin-top:-700px;
+    font-size: 1.2rem;
+}
+
+
+
+.question-no-image{
+    margin-top:-400px;
+    font-size: 1.2rem;
+}
+
+
+#answer {
+    position:absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    max-width: 500px;
+    padding:10px;
+
+    align-items: center;
+    top:480px;
+    right:700px;
+
+
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between; /* spatiu intre butoane */
+    width: 80%; /*ajusteaza latimea pentru a ramane in pagina*/
+    max-width: 600px; /* limitează latimea maxima pentru butoane*/
+    margin-top: 20px; /* spatiu deasupra butoanelor */
+}
+
+#next-btn,
+#previous-btn {
+    align-items: center;
+    background-color: #295f98;
+    border: 0;
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "Arial", sans-serif;
+    font-size: 38px;
+    justify-content: center;
+    padding: 0 20px;
+    max-width: 200px;
+    min-height: 60px;
+    transition: background-color 0.167s ease, color 0.167s ease;
+}
+
+#next-btn:hover,
+#previous-btn:hover {
+    background-color: #09223b;
+}
+
+#next-btn:active,
+#previous-btn:active {
+    background: #09223b;
+}
+
+#next-btn:disabled,
+#previous-btn:disabled {
+    cursor: not-allowed;
+    background: rgba(0, 0, 0, .08);
+    color: rgba(0, 0, 0, .3);
+}
+/*ca sa poata fi mutate liber*/
+#previous-btn {
+    position: absolute;
+    left: 10%; /*orizontală */
+    bottom: 15%; /*verticala */
+}
+#next-btn {
+    position: absolute;
+    right:10%; /* pozitia  orizontala */
+    bottom: 15.5%; /* pozitia  verticala */
+}
+.imagines {
+    position:absolute;
+    top:140px;
+    left:40%;
+    height: auto; /* pastreaza proportiile imaginii */
+    border-radius: 20px; /* rotunjeste colturile imaginii */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    margin: 20px auto; /* centreaza orizontal */
+    width: 410px;
+}
+
+.btn-container {
+    display: flex;
+    flex-wrap: wrap; /* permite trecerea pe un rând nou */
+    justify-content: center; /* aliniază butoanele central */
+
+    max-width: 300px; /* setează o lățime maximă a containerului pentru a menține aspectul dorit */
+}
+
+
+.btn {
+    align-items: center;
+    background-color: #295f98;
+    border: 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "Arial", sans-serif;
+    font-size: 15px;
+    justify-content: center;
+    padding: 0 20px;
+    width: 45%; /* fiecare buton ocupa aproximativ 50% din latime */
+    min-height: 40px;
+    transition: background-color 0.167s ease, color 0.167s ease;
+}
+.answer-with-image {
+    margin-top: 10px;
+    gap:15px;
+}
+.answer-no-image {
+    width: 45%;
+    margin-top:-160px;
+    gap: 10px; /*spatiu intre raspunsuri*/
+}
+
+.btn:hover, .button-with-image:hover, .button-no-image:hover {
+    background-color: #09223b;
+}
+.btn:hover {
+    background-color: #09223b;
+}
+
+.btn:active {
+    background: #09223b;
+}
+
+.btn:disabled {
+    cursor: not-allowed;
+    background: rgba(0, 0, 0, .08);
+    color: rgba(0, 0, 0, .3);
+}
