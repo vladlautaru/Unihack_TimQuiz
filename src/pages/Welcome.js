@@ -26,8 +26,6 @@ function Welcome() {
                     </div>
 
                 </section>
-
-                <img src={require('../images/imagine_timisoara_welcome.jpg')} className="image1" alt="Timisoara 1"/>
                 <img src={require('../images/imagine-timisoara2.jpg')} className="image2" alt="Timisoara 2"/>
                 <img src={require('../images/imagine-timisoara3.jpg')} className="image3" alt="Timisoara 3"/>
             </div>
