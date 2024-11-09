@@ -107,7 +107,7 @@ ul li{
 .title {
     writing-mode: vertical-rl;
     margin-top:  150px;
-    font-size: 40px; /* makes "TIMISOARA" larger */
+    font-size: 60px; /* makes "TIMISOARA" larger */
     margin-left:1190px; /*muta tmisoara mai la dreapta*/
     text-orientation: upright;
 }
