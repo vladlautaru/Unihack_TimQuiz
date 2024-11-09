@@ -120,6 +120,7 @@
     user-select: none;
     vertical-align: middle;
     margin-top: 20px; /* Adds spacing between the two buttons */
+    margin-bottom: 30px;
 }
 
 .button_2:hover,
