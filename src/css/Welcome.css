@@ -1,0 +1,214 @@
+*{
+    font-family:'Arial', sans-serif;
+
+}
+
+
+
+body {
+
+    background-image: url('../images/imagine_timisoara_welcome.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+ul li{
+    list-style-type:none;
+    font-weight:bold;
+    font-size:30px;
+}
+
+.button {
+
+    align-items: center;
+    background-color: #295f98;
+    border: 0;
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "Sans-serif", monospace;
+    /*marimea scrisului din buton*/
+    font-size:45px;
+    font-weight: 20;
+    font-style:normal;
+    font-variation-settings:
+            "wdth" 93.5;
+    justify-content: center;
+    line-height: 20px;
+    max-width: 480px;
+    /*dimensiunea butonului*/
+    min-height: 65px;
+    min-width: 0px;
+    overflow: hidden;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    touch-action: manipulation;
+    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    margin-left: 200px;
+}
+
+.button:hover,
+.button:focus {
+    background-color: #16437E;
+    color: #ffffff;
+}
+
+.button:active {
+    background: #09223b;
+    color: rgb(255, 255, 255, .7);
+}
+
+.button:disabled {
+    cursor: not-allowed;
+    background: rgba(0, 0, 0, .08);
+    color: rgba(0, 0, 0, .3);
+}
+.container {
+    display:flex;
+    position: relative;
+    height: 100vh;
+    /* display: flex;
+     justify-content:flex-end;
+     align-items: center;
+    /* overflow: hidden;*/
+}
+.image{
+    position:absolute;
+    width:400px;
+    height:300px;
+    border-radius:20px;
+}
+
+.image2 { /*imaginea cu bega*/
+    position:absolute;
+    right:70px; /*spatiu fata de marginea dreapta*/
+    border-radius: 20px;
+    padding: 5px;
+    width: 500px;
+    height:700px;
+    bottom:20%;
+}
+
+.hero-content{
+    display:flex;
+    align-items:flex-start;
+    gap:20px;
+}
+
+
+.title {
+    writing-mode: vertical-rl;
+    margin-top:  150px;
+    font-size: 40px; /* makes "TIMISOARA" larger */
+    margin-left:1190px; /*muta tmisoara mai la dreapta*/
+    text-orientation: upright;
+}
+
+.title div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.title div span {
+    display: block;
+    left: 60px;
+    border-radius: 100px;
+    font-size: 1em; /* inherits font size from .letter */
+
+}
+
+
+.image3 { /*imaginea cu opera*/
+    position: absolute;
+    left: 650px;
+    bottom: 20%; /* spațiu față de marginea de jos */
+    border-radius: 20px;
+    padding: 5px;
+    width: 500px;
+    height:700px;
+    bottom: 20%
+}
+
+
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.name{
+
+    position: absolute;
+    top: 150px; /*pozitionarea*/
+    left: 50px; /*stanga sus*/
+    font-size: 2rem;
+    color:black;
+}
+.name2{
+
+    position: absolute;
+    top: 200px; /*pozitionarea*/
+    left: 50px; /*stanga sus*/
+    font-size: 2rem;
+    color:black;
+
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.hero-heading {
+
+    position: absolute;
+    top: 30px; /*pozitionarea*/
+    left: 50px; /*stanga sus*/
+    font-size: 3rem;
+    color:black;
+    font-weight:bold;
+
+}
+
+
+.hero h1 {
+    font-size: 2rem;
+    color: #333;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.hero-down {
+    position: absolute;
+    bottom: 80px;
+    right: 350px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/*buton*/
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-20%);
+    margin-right: 150px;
+}
+
+.text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
