@@ -37,10 +37,10 @@ function Score() {
         <div className="score">
             {showConfetti && <Confetti width={window.innerWidth} height={window.innerHeight} />}
             <div className="derivat">
-                <h1 className="h11">Scorul tau:</h1>
+                <h1 className="h11">Your score:</h1>
                 <h2 className="h22">{score}</h2>
                 <Link to="/">
-                    <button className="button_1">Încearca din nou</button>
+                    <button className="button_1">Try again</button>
                 </Link>
                 <button className="button_2" onClick={handleFunFactsClick}>Fun facts!</button>
                 {/* Afișează fun facts dacă showFunFacts este true */}
