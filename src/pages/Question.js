@@ -5,16 +5,16 @@ import ChatBox from './ChatBox'
 
 const questions=[
     {
-        question: "Ce râu curge prin Timișoara?",
+        question: "What river flows trough Timișoara?",
         answers:[
-            {text:"Timișul", correct:false},
+            {text:"Timiș", correct:false},
             {text:"Bega", correct:true},
-            {text:"Crișul", correct:false},
-            {text:"Mureșul", correct:false},
+            {text:"Criș", correct:false},
+            {text:"Mureș", correct:false},
         ]
     },
     {
-        question: "Ce loc este prezentat in imagine?",
+        question: "What place is shown in the image?",
         answers:[
             {text:"Piața Libertății", correct:false},
             {text:"Piața Victoriei", correct:false},
@@ -25,25 +25,25 @@ const questions=[
     },
 
     {
-        question: "Timișoara drept capitală europeană a culturii a avut sloganul:",
+        question: "Timișoara, as the European Capital of Culture, had the slogan:",
         answers:[
-            {text:"Luminează orașul prin tine", correct:true},
-            {text:"Luminează și strălucește alături de ceilalți", correct:false},
-            {text:"Fă lumină în jurul tău", correct:false},
-            {text:"Tu ești lumina orașului", correct:false},
+            {text:"Light up the city through you", correct:true},
+            {text:"Light up and shine alongside others", correct:false},
+            {text:"Make light around you", correct:false},
+            {text:"You are the light of the city", correct:false},
         ]
     },
     {
-        question: "Ce semnifică ziua de 16 Decembrie pentru Timișoara?",
+        question: "What does December 16th signify for Timișoara?",
         answers:[
-            {text:"Dezastrul de la Colectiv", correct:false},
-            {text:"Revoluția din 1989", correct:true},
-            {text:"Revolta din 1907", correct:false},
-            {text:"Încheierea Primulul Război Mondial", correct:false}
+            {text:"The Colectiv disaster", correct:false},
+            {text:"The 1989 Revolution", correct:true},
+            {text:"The 1907 Rebellion", correct:false},
+            {text:"The end of World War I", correct:false}
         ]
     },
     {
-        question: "Care dintre următorii inventatori a fost născut în Timișoara?",
+        question: "Which of the following inventors was born in Timișoara?",
         answers:[
             {text:"Aurel Vlaicu", correct:false},
             {text:"Henri Coandă", correct:false},
@@ -52,7 +52,7 @@ const questions=[
         ]
     },
     {
-        question: "Care este numele cladirii prezentate in imagine?",
+        question: "What is the name of the building shown in the image?",
         answers:[
             {text:"Palatul Culturii", correct:false},
             {text:"Catedrala Mitropolitana Ortodoxa Romana", correct:false},
