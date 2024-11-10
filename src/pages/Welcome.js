@@ -22,8 +22,8 @@ function Welcome() {
                         </div>
 
                         <div className="letter">TIMISOARA</div>
-                        <div className="name">Hai sa descoperim Timisoara!</div>
-                        <div className="name2">Esti gata de o noua aventura?</div>
+                        <div className="name">Let's discover Timișoara!</div>
+                        <div className="name2">Are you ready for a new adventure?</div>
                     </div>
 
                 </section>

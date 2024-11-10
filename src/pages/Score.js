@@ -33,6 +33,10 @@ function Score() {
         setTimeout(() => setShowConfetti(false), 4000); //ca la sbmm cu secundele de hold
     };
 
+    const handleOpenForm = () => {
+        window.open("https://docs.google.com/forms/d/e/1FAIpQLSfu7ZM12JNJMOz-jHGYlZt7A45_NmlKw6yh1haAdoWSjyeQQQ/viewform", "_blank", "noopener,noreferrer");
+    };
+
     return (
         <div className="score">
             {showConfetti && <Confetti width={window.innerWidth} height={window.innerHeight} />}
