@@ -1,3 +1,8 @@
+
+*{
+    font-family: 'Arial',sans-serif;
+}
+
 body {
     margin: 0;
     height: 100vh;
@@ -20,7 +25,7 @@ body {
 }
 
 .title {
-    font-family: 'Arial';
+
     position: absolute;
     top: -10px; /* verticala */
     left: 20px; /* orizontala */
@@ -29,18 +34,18 @@ body {
     margin: 10px 0; /* margini pentru spatiere */
 }
 
-.quiz {
-    font-size: 1.5rem;
-    margin-top: 60px; /*spatiu deasupra quiz-ului*/
+.question-with-image {
+    margin-top:-700px;
+    font-size: 1.2rem;
 }
 
-#question {
-    position:absolute;
-    font-size: 1.9rem;
-    margin: 10px 0; /*spațiu deasupra si dedesubt*/
-    top:85px;
-    left:650px;
+
+
+.question-no-image{
+    margin-top:-400px;
+    font-size: 1.2rem;
 }
+
 
 #answer {
     position:absolute;
@@ -49,7 +54,7 @@ body {
     justify-content:center;
     max-width: 500px;
     padding:10px;
-    gap: 15px; /*spatiu intre raspunsuri*/
+
     align-items: center;
     top:480px;
     right:700px;
@@ -100,7 +105,7 @@ body {
     background: rgba(0, 0, 0, .08);
     color: rgba(0, 0, 0, .3);
 }
-/*ca s apoata fi mutate liber*/
+/*ca sa poata fi mutate liber*/
 #previous-btn {
     position: absolute;
     left: 10%; /*orizontală */
@@ -126,7 +131,7 @@ body {
     display: flex;
     flex-wrap: wrap; /* permite trecerea pe un rând nou */
     justify-content: center; /* aliniază butoanele central */
-    gap: 10px; /* spațiu între butoane */
+
     max-width: 300px; /* setează o lățime maximă a containerului pentru a menține aspectul dorit */
 }
 
@@ -147,6 +152,19 @@ body {
     width: 45%; /* fiecare buton ocupa aproximativ 50% din latime */
     min-height: 40px;
     transition: background-color 0.167s ease, color 0.167s ease;
+}
+.answer-with-image {
+    margin-top: 10px;
+    gap:15px;
+}
+.answer-no-image {
+    width: 45%;
+    margin-top:-160px;
+    gap: 10px; /*spatiu intre raspunsuri*/
+}
+
+.btn:hover, .button-with-image:hover, .button-no-image:hover {
+    background-color: #09223b;
 }
 .btn:hover {
     background-color: #09223b;
