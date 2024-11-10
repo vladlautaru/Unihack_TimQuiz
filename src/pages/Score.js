@@ -1,14 +1,16 @@
 import React from "react";
 import '../css/Score.css';
 import Confetti from 'react-confetti';
-import { useLocation } from "react-router-dom";
+import {useLocation} from "react-router-dom"; //pt confetti test
 import { Link } from 'react-router-dom';
+
 
 function Score() {
     const location = useLocation();
-    const { score } = location.state || { score: 0 };
+    const {score} = location.state || {score: 0};
     const [showConfetti, setShowConfetti] = React.useState(false);
     const [showFunFacts, setShowFunFacts] = React.useState(false);
+
 
     const funFacts = [
         "The Bega River springs in the Poiana Ruscă Mountains. It flows through the cities of Făget and Timișoara in Romania and the Serbian city of Zrenjanin. It empties into the Tisa River.",
@@ -27,25 +29,21 @@ function Score() {
 
     const handleFunFactsClick = () => {
         setShowConfetti(true);
-        setShowFunFacts(prevShow => !prevShow);
-        setTimeout(() => setShowConfetti(false), 4000);
-    };
-
-    // Funcție pentru deschiderea formularului într-o pagină nouă
-    const handleOpenForm = () => {
-        window.open("https://docs.google.com/forms/d/e/1FAIpQLSfu7ZM12JNJMOz-jHGYlZt7A45_NmlKw6yh1haAdoWSjyeQQQ/viewform", "_blank", "noopener,noreferrer");
+        setShowFunFacts(prevShow => !prevShow); // Afișează fun facts+sa se inchida
+        setTimeout(() => setShowConfetti(false), 4000); //ca la sbmm cu secundele de hold
     };
 
     return (
         <div className="score">
             {showConfetti && <Confetti width={window.innerWidth} height={window.innerHeight} />}
             <div className="derivat">
-                <h1 className="h11">Scorul tău:</h1>
+                <h1 className="h11">Your score:</h1>
                 <h2 className="h22">{score}</h2>
                 <Link to="/">
-                    <button className="button_1">Încearcă din nou</button>
+                    <button className="button_1">Try again</button>
                 </Link>
                 <button className="button_2" onClick={handleFunFactsClick}>Fun facts!</button>
+                {/* Afișează fun facts dacă showFunFacts este true */}
                 {showFunFacts && (
                     <ul className="fun-facts-list">
                         {funFacts.map((fact, index) => (
